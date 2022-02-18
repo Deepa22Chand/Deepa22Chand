@@ -1,0 +1,9 @@
+<div class="nav" *ngIf="nav.visible">
+  <nav>
+    <span routerLink="home" routerLinkActive="active">Home</span>&nbsp;
+    <span routerLink="about" routerLinkActive="active">About</span>&nbsp;
+    <span routerLink="contact" routerLinkActive="active">Contact</span>&nbsp;
+    <!-- <span routerLink="about/12" routerLinkActive="active">Some Other Route</span>&nbsp; -->
+    <button (click)="logout()">LogOut</button>
+  </nav>
+</div>

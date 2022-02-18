@@ -1,0 +1,22 @@
+<div class="form">
+  <div *ngIf="isShown" id="msg">Successfully Submitted..</div>
+  <div class="content">
+    <label> Name</label><br />
+    <input type="text " placeholder="name" [(ngModel)]="name" />
+  </div>
+  <div class="content">
+    <label> Email</label><br />
+    <input type="email " placeholder="test@gmail.com" [(ngModel)]="email" />
+  </div>
+  <div class="content">
+    <label> Message </label><br />
+    <input
+      type="text "
+      class="message"
+      placeholder=" Write your message!!"
+      [(ngModel)]="message"
+    />
+  </div>
+
+  <button (click)="submit()">Submit</button>
+</div>

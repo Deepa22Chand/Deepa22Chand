@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tuts-routing": {
+    "routing-assignment": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tuts-routing",
+            "outputPath": "dist/routing-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "./node_modules/jquery/dist/jquery.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -63,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tuts-routing:build"
+            "browserTarget": "routing-assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tuts-routing:build:production"
+              "browserTarget": "routing-assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tuts-routing:build"
+            "browserTarget": "routing-assignment:build"
           }
         },
         "test": {
@@ -111,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tuts-routing:serve"
+            "devServerTarget": "routing-assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tuts-routing:serve:production"
+              "devServerTarget": "routing-assignment:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tuts-routing"
+  "defaultProject": "routing-assignment"
 }

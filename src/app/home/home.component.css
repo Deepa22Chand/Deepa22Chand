@@ -1,0 +1,27 @@
+table {
+  margin: 20px;
+  width: 80%;
+}
+table,
+th,
+td {
+  border: 3px solid rgb(91, 91, 214);
+  border-collapse: collapse;
+  padding: 10px;
+  margin-left: 200px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+}
+p {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: cursive;
+  text-align: center;
+  margin: 30px;
+}
+th {
+  color: blue;
+  font-weight: bolder;
+  font-size: 30px;
+}

@@ -1,0 +1,21 @@
+.active {
+  background-color: rgb(95, 61, 218);
+}
+.nav {
+  padding: 10px;
+  background-color: rgb(101, 101, 219);
+  font-family: cursive;
+}
+span {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 70px;
+  padding: 15px;
+}
+
+button {
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 7px;
+  margin-left: 700px;
+}

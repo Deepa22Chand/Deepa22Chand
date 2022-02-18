@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div class="content">
+      <div class="logInForm">
+        
+        <h1>Login</h1>
+
+        <input type="text" placeholder="Email" [(ngModel)]="email" /> <br />
+        <input type="password" placeholder="password" [(ngModel)]="password" />
+        <br />
+        <button type="submit" class="btn btn-primary" (click)="checkLogin()">
+          Login
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
